@@ -1,5 +1,4 @@
 import React from 'react';
-import UserInterface from '../interfaces/UserInterface';
 const UserList = ({ users }) => {
  return (
   <div>

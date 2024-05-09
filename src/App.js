@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import UserList from './components/UserList';
 import AddUserForm from './components/AddUserForm';
+import UserCounter from './components/UserCounter';
+
 const App = () => {
  const [users, setUsers] = useState([
   { id: 1, name: 'Juan' },
@@ -15,6 +17,7 @@ const App = () => {
    <h1>Administrador de Usuarios</h1>
    <UserList users={users} />
    <AddUserForm addUser={addUser} />
+   <UserCounter users={users}/>
   </div>
  );
 };
